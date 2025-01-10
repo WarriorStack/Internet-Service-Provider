@@ -10,6 +10,7 @@ header{
     top: 0px;
     padding: 1rem;
     background-color: rgb(23, 23, 23);
+    z-index: 1000;
 }
 nav{
     display: flex;
@@ -199,10 +200,30 @@ nav .right{
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
+.lightShaded{
+    height: 130vh;
 
+}
 
 .firstLight{    
-
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+.firstLight .upperText{
+    margin-top: 5rem;
+    text-align: center;
+}
+.firstLight .upperText h2{
+    font-size: 36px;
+    font-weight: 700;
+    padding: 15px;
+}
+.firstLight .upperText p{
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .features {
@@ -269,3 +290,95 @@ nav .right{
     font-size: 0.9rem;
     color: #666;
 }
+    /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+    .pricing-table {
+        display: flex;
+        gap: 20px;
+    }
+
+    .plan {
+        background-color: #1e1e1e;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        width: 300px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .plan:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .plan.basic {
+        border: 2px solid #007bff;
+    }
+
+    .plan.popular {
+        background-color: #007bff;
+        border: 2px solid #ffd700;
+    }
+
+    .plan.popular h2,
+    .plan.popular p,
+    .plan.popular .btn {
+        color: white;
+    }
+
+    .plan.ultra {
+        border: 2px solid #9b59b6;
+    }
+
+    .plan h2 {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .plan p {
+        margin: 20px 0;
+        font-size: 18px;
+    }
+
+    .plan ul {
+        list-style: none;
+        padding: 0;
+        margin: 20px 0;
+    }
+
+    .plan ul li {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    .btn:hover {
+        background-color: #0056b3;
+    }
+
+    .tag {
+        position: relative;
+        top: -10px;
+        left: -10px;
+        background-color: #ffd700;
+        color: black;
+        padding: 5px 10px;
+        font-size: 14px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    .ultra .tag {
+        background-color: #9b59b6;
+        color: white;
+    }
