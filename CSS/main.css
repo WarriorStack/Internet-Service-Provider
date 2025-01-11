@@ -5,11 +5,14 @@
     padding: 0;
     font-family: "Inter";
 }
+body{
+    background-color: rgb(23,23,23);
+}
 header{
     position: sticky;
     top: 0px;
     padding: 1rem;
-    background-color: rgb(23, 23, 23);
+    background-color: rgba(23, 23, 23, 0.795);
     z-index: 1000;
 }
 nav{
@@ -53,11 +56,11 @@ nav .right{
 .darkShaded{
     background-color: rgb(23,23,23);
     color: white;
-    height: 90vh;
 }
 .firstDark{
     display: grid;
     grid-template-columns: 40vw 50vw;
+    height: 90vh;
     margin: 0rem 7rem;
 }
 .darkShaded .left{
@@ -92,6 +95,16 @@ nav .right{
     padding: 16px 30px;
     margin: 0px 0px 30px 20px;
 }
+.darkShaded .blueBtn:hover{
+    transform:scale(1.05);
+    background-color: #003fbf;
+}
+.darkShaded .greyBtn:hover{
+    transform:scale(1.05);
+    background-color: #8d8b8b;
+}
+
+
 .firstDark div ul{
     display: flex;
     gap: 3rem;
@@ -202,7 +215,8 @@ nav .right{
 
 .lightShaded{
     height: 130vh;
-
+    background-color: white;
+    color: black;
 }
 
 .firstLight{    
@@ -292,6 +306,23 @@ nav .right{
 }
     /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
+
+    .secondDark{
+        height: 100vh;
+    }
+
+    .darkShaded .upperText{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 5rem 0rem 5rem 0rem;
+    }
+    .darkShaded .cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .pricing-table {
         display: flex;
         gap: 20px;
@@ -382,3 +413,117 @@ nav .right{
         background-color: #9b59b6;
         color: white;
     }
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.secondLightShaded{
+}
+.container {
+    display: flex;
+    /* margin: 5rem 5rem 5rem 5rem; */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    gap: 5rem;
+    max-width: 1000px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 32px;
+}
+
+.form-section {
+    width: 100%;
+}
+
+.form-heading {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.form-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-bottom: 12px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.input-field:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+.submit-button {
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.highlights-section {
+    margin-top: 32px;
+    background: #f8f9ff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.highlights-heading {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.highlight-icon {
+    width: 28px;
+    height: 28px;
+    margin-right: 12px;
+}
+
+.highlight-text {
+    font-size: 14px;
+    color: #444;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .form-section, .highlights-section {
+        width: 48%;
+    }
+}
